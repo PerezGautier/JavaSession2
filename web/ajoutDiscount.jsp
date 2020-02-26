@@ -51,7 +51,7 @@
 		<div><h4>${message}</h4></div>
 		<%-- On on montre la liste des discount codes --%>
 		<div class="table">
-			<div class="thead"><div class="td">Code</div><div class="td">Taux</div><div class="td">Action</div></div>
+			<div class="thead"><div class="td">Code</div><div class="td">Taux</div><div class="td">Delete</div><div class="td">Modify</div></div>
 			<div class="tbody">
 			<c:forEach var="record" items="${codes}">
 				<form class="tr" method="get">

@@ -89,7 +89,7 @@ public class DAO {
 	 * @return le nombre d'enregistrements supprimés (1 ou 0)
 	 * @throws java.sql.SQLException renvoyées par JDBC
 	 **/
-        public int modifierTaux(String code, Float taux) throws SQLException{
+        public int modifyDiscountRate(String code, Float taux) throws SQLException{
             int result = 0;
 
             String sql = "update DISCOUNT_CODE set RATE = ? where DISCOUNT_CODE = ?";

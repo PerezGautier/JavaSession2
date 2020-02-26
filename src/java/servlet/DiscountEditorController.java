@@ -54,7 +54,7 @@ public class DiscountEditorController extends HttpServlet {
 					break;
                                 case "MODIFY": // Requête de modification (vient du lien hypertexte)
 					try {
-						dao.modifierTaux(code, Float.valueOf(taux));
+						dao.modifyDiscountRate(code, Float.valueOf(taux));
 						request.setAttribute("message", "Code " + code + " Taux " + taux + " modifié");
 						request.setAttribute("codes", dao.allCodes());								
 					} catch (SQLIntegrityConstraintViolationException e) {
